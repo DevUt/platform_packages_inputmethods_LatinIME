@@ -312,7 +312,7 @@ public class SettingsValues {
                     .putBoolean(Settings.PREF_SHOW_SUGGESTIONS, !alwaysHide)
                     .apply();
         }
-        return prefs.getBoolean(Settings.PREF_SHOW_SUGGESTIONS, true);
+        return prefs.getBoolean(Settings.PREF_SHOW_SUGGESTIONS, false);
     }
 
     private static boolean readBigramPredictionEnabled(final SharedPreferences prefs,
